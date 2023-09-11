@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #264653;
+}
+.card {
+  width: 300px;
+  height: 320px;
+  margin: -50px;
+  transition: .5s;
+  background: linear-gradient(#fff2, transparent);
+  backdrop-filter: blur(10px);
+}
+.card1{
+  transform: rotate(-15deg);
+}
+.card2{
+  transform: rotate(5deg);
+}
+.cards-container:hover .card{
+  margin: 10px;
+}
+.cards-container:hover .card1, .cards-container:hover .card2{
+  transform: rotate(0);
+}
+.badge {
+  background-color: #2a9d8f;
+}
+.alert {
+  font-family: "Bruno Ace";
+}
+
+/* Spinner animation */
+.dotted-circle{
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-style: solid solid dotted dotted;
+  border-color: lightseagreen;
+  border-radius: 50%;
+  animation: circular 2s ease-in-out infinite;
+}
+.smaller-dotted-circle{
+  position: absolute;
+  top: 170px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-width: 4px;
+  border-style: dotted dotted solid solid;
+  border-color: lightblue;
+  border-radius: 50%;
+  animation: circular2 2s ease-in-out infinite;
+}
+@keyframes circular {
+  from{
+      transform: rotate(0);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+@keyframes circular2 {
+  from{
+      transform: rotate(0);
+  }
+  to{
+      transform: rotate(-1turn);
+  }
+}
