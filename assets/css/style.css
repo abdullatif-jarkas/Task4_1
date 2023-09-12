@@ -5,6 +5,8 @@
 }
 main {
   background-color: #264653;
+  background-image: url(./../imgs/background.jpg);
+  background-size: cover;
 }
 .card {
   width: 300px;
